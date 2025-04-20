@@ -16,6 +16,12 @@
 
             Motorcycle mc = new Motorcycle();
 
+            Motorcycle c = new Motorcycle(5);
+
+            c.SetDriverName("Jeck");
+
+            Console.WriteLine($"Name driver {c.driverName}");
+
             mc.PopAWheely();
 
             uaz.PrintState();
