@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticDataAndMembers", "Sta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeApp", "EmployeeApp\EmployeeApp.csproj", "{8C1AF6A5-F99F-40A8-AB40-247B9BC18DB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProps", "AutoProps\AutoProps.csproj", "{8DC956FB-4991-47A3-B426-ED9303EE964F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8C1AF6A5-F99F-40A8-AB40-247B9BC18DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C1AF6A5-F99F-40A8-AB40-247B9BC18DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C1AF6A5-F99F-40A8-AB40-247B9BC18DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DC956FB-4991-47A3-B426-ED9303EE964F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DC956FB-4991-47A3-B426-ED9303EE964F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DC956FB-4991-47A3-B426-ED9303EE964F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DC956FB-4991-47A3-B426-ED9303EE964F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

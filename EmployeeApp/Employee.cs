@@ -15,6 +15,13 @@ namespace EmployeeApp
 
         private float _currPay;
 
+        private int _empAge;
+
+        private string _empSSN;
+
+        private EmployeePayTypeEnum _payType;
+
+
         public string Name
         {
             get { return _empName; }
@@ -43,26 +50,63 @@ namespace EmployeeApp
             set { _currPay = value; }
         }
 
-        public Employee(){}
-
-        public Employee(string name, int id, float pay)
+        public int Age
         {
-            _empName = name;
-
-            _empId = id;
-
-            _currPay = pay;
+            get { return _empAge; }
+            set { _empAge = value; }
         }
 
-        public void GiveBonus(float amount) => _currPay += amount;
+        public string SSN
+        {
+            get { return _empSSN; }
+            set { _empSSN = value; }
+        }
+
+        public EmployeePayTypeEnum PayType
+        {
+            get => _payType;
+            set => _payType = value;
+        }
+
+        public Employee(){}
+
+        public Employee(string name, int id, float pay, string ssn) : this (name, 0, id, pay, ssn, EmployeePayTypeEnum.Salaried){ }
+
+        public Employee(string name, int age, int id, float pay, string ssn, EmployeePayTypeEnum payType)
+        {
+            Name = name;
+
+            Id = id;
+
+            Pay = pay;
+
+            Age = age;
+
+            SSN = ssn;
+
+            PayType = payType;
+        }
+
+        public void GiveBonus(float amount)
+        {
+            Pay = this switch
+            {
+                { PayType: EmployeePayTypeEnum.Commision } => Pay += .10F * amount,
+                { PayType: EmployeePayTypeEnum.Hourly } => Pay += 40F * amount / 2080F,
+                { PayType: EmployeePayTypeEnum.Salaried } => Pay += amount,
+                _ => Pay += 0
+            };
+        }
 
         public void DisplayStatus()
         {
-            Console.WriteLine($"Nmae: {_empName}");
+            Console.WriteLine($"Name: {Name}");
 
-            Console.WriteLine($"ID: {_empId}");
+            Console.WriteLine($"Age: {Age}");
 
-            Console.WriteLine($"Pay: {_currPay}");
+            Console.WriteLine($"ID: {Id}");
+
+            Console.WriteLine($"Pay: {Pay}");
         }
     }
 }
