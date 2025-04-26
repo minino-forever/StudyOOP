@@ -12,9 +12,9 @@
 
             emp.DisplayStatus();
 
-            emp.SetName("Marv");
+            emp.Name = "Marv";
 
-            Console.WriteLine($"Employee is named: {emp.GetName()}");
+            Console.WriteLine($"Employee is named: {emp.Name}");
         }
     }
 }

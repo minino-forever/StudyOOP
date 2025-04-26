@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace EmployeeApp
 {
@@ -14,18 +15,32 @@ namespace EmployeeApp
 
         private float _currPay;
 
-        public string GetName() => _empName;
-
-        public void SetName(string name)
+        public string Name
         {
-            if (name.Length > 15)
+            get { return _empName; }
+            set
             {
-                Console.WriteLine($"Error! Name lemgth exceeds 15 characters!");
+                if (value.Length > 15)
+                {
+                    Console.WriteLine($"Error! Name lemgth exceeds 15 characters!");
+                }
+                else
+                {
+                    _empName = value;
+                }
             }
-            else
-            {
-                _empName = name;
-            }
+        }
+
+        public int Id
+        {
+            get { return _empId; }
+            set { _empId = value; }
+        }
+
+        public float Pay
+        {
+            get { return _currPay; }
+            set { _currPay = value; }
         }
 
         public Employee(){}
