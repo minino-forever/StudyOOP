@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace EmployeeApp
 {
-    internal class Employee
+      partial class Employee
     {
         private string _empName;
 
