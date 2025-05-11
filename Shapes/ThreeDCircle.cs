@@ -8,5 +8,11 @@ namespace Shapes
 {
     internal class ThreeDCircle : Circle
     {
+        public new string PetName { get; set; }
+
+        public new void Draw()
+        {
+            Console.WriteLine("Draiwing a 3D Circle!");
+        }
     }
 }

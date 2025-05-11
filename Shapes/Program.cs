@@ -23,6 +23,14 @@
             {
                 shape.Draw();
             }
+
+            Console.WriteLine("\nThree 3D!\n");
+
+            ThreeDCircle threeD = new ThreeDCircle();
+
+            threeD.Draw();
+
+            ((Circle)threeD).Draw();
         }
     }
 }
