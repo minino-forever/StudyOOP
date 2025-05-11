@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace Employees
 {
-      partial class Employee
+      abstract partial class Employee
     {
         private string _empName;
 
@@ -97,7 +97,7 @@ namespace Employees
             PayType = payType;
         }
 
-        public void GiveBonus(float amount)
+       /* public void GiveBonus(float amount)
         {
             Pay = this switch
             {
@@ -107,8 +107,13 @@ namespace Employees
                 _ => Pay += 0
             };
         }
+       */
 
-        public void DisplayStatus()
+        public virtual void GiveBonus(float amount)
+        {
+            Pay += amount;
+        }
+        public virtual void DisplayStatus()
         {
             Console.WriteLine($"Name: {Name}");
 
@@ -117,6 +122,8 @@ namespace Employees
             Console.WriteLine($"ID: {Id}");
 
             Console.WriteLine($"Pay: {Pay}");
+
+            Console.WriteLine($"SSN: {SSN}");
         }
     }
 }
