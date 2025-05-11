@@ -21,6 +21,16 @@ namespace Employees
 
         private EmployeePayTypeEnum _payType;
 
+        protected BenefitPackage EmpBenefits = new BenefitPackage();
+
+        public double GetBenefitCost() => EmpBenefits.ComputePayDeduction();
+
+        public BenefitPackage Benefits
+        {
+            get { return EmpBenefits;}
+            set { EmpBenefits = value; }
+        }
+
 
         public string Name
         {
