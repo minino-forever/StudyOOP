@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Employees", "Employees\Empl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordInheritance", "RecordInheritance\RecordInheritance.csproj", "{F1BB6473-7A25-4628-8B3B-12A79D5F52D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDelegat", "MyDelegat\MyDelegat.csproj", "{1F15B59A-E71B-4AD7-824D-44D76E754091}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{F1BB6473-7A25-4628-8B3B-12A79D5F52D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1BB6473-7A25-4628-8B3B-12A79D5F52D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1BB6473-7A25-4628-8B3B-12A79D5F52D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F15B59A-E71B-4AD7-824D-44D76E754091}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F15B59A-E71B-4AD7-824D-44D76E754091}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F15B59A-E71B-4AD7-824D-44D76E754091}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F15B59A-E71B-4AD7-824D-44D76E754091}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
