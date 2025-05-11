@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordInheritance", "Record
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDelegat", "MyDelegat\MyDelegat.csproj", "{1F15B59A-E71B-4AD7-824D-44D76E754091}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{BED60D19-60E6-488B-9BDD-2FA433FD05DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{1F15B59A-E71B-4AD7-824D-44D76E754091}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F15B59A-E71B-4AD7-824D-44D76E754091}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F15B59A-E71B-4AD7-824D-44D76E754091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED60D19-60E6-488B-9BDD-2FA433FD05DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED60D19-60E6-488B-9BDD-2FA433FD05DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED60D19-60E6-488B-9BDD-2FA433FD05DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED60D19-60E6-488B-9BDD-2FA433FD05DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
