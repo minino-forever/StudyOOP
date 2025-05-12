@@ -26,6 +26,29 @@
             fran.GiveBonus(200);
 
             fran.DisplayStatus();
+
+            Console.WriteLine("\nCasting Examples\n");
+
+            CastingExamples();
+        }
+
+
+        static void CastingExamples()
+        {
+            object frank = new Manager("Frank Zappa", 9, 3000, 40000, "23-42-35", 5);
+
+            Employee mooUnit = new Manager("MoonUnit Zappa", 2, 3001, 20000, "123-35-6546", 1);
+
+            SalesPerson jill = new PtSalesPerson("Jill", 834, 3002, 100000, "12131-242-24", 90);
+
+            GivePromotion(mooUnit);
+
+            GivePromotion(jill);
+        }
+
+        static void GivePromotion(Employee emp)
+        {
+            Console.WriteLine($"{emp.Name}");
         }
     }
 }
